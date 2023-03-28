@@ -146,101 +146,79 @@
       aria-labelledby="exampleModalLongTitle"
       aria-hidden="true"
     >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="wrapper modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
+            <button class="icon-close" data-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
-          <div class="modal-body"></div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+              <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" required />
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" required />
+                <label>Password</label>
+              </div>
+              <div class="remember-forgot">
+                <label><input type="checkbox" />Remember Me</label>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <button type="submit" class="btnLGN" id="btnLogin">Login</button>
+              <div class="login-register">
+                <p>
+                  Don't have an account?
+                  <a href="#" class="register-link">Register</a>
+                </p>
+              </div>
+            </form>
+          </div>
+          <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+              <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                <input type="text" required />
+                <label>Username</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" required />
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" required />
+                <label>Password</label>
+              </div>
+              <div class="remember-forgot">
+                <label
+                  ><input type="checkbox" />I agree to the terms &amp;
+                  conditions</label
+                >
+              </div>
+              <button type="submit" class="btnLGN" id="btnRegister">
+                Register
+              </button>
+              <div class="login-register">
+                <p>
+                  Already have an account?
+                  <a href="#" class="login-link">Login</a>
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+
     <!-- LOGINREGISTER Modal - END -->
-
-    <!-- Login -->
-    <!-- <div class="wrapper">
-      <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
-      <div class="form-box login">
-        <h2>Login</h2>
-        <form action="#">
-          <div class="input-box">
-            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-            <input type="email" required />
-            <label>Email</label>
-          </div>
-          <div class="input-box">
-            <span class="icon"><i class="fa-solid fa-lock"></i></span>
-            <input type="password" required />
-            <label>Password</label>
-          </div>
-          <div class="remember-forgot">
-            <label><input type="checkbox" />Remember Me</label>
-            <a href="#">Forgot Password?</a>
-          </div>
-          <button type="submit" class="btnLGN">Login</button>
-          <div class="login-register">
-            <p>
-              Don't have an account?
-              <a href="#" class="register-link">Register</a>
-            </p>
-          </div>
-        </form>
-      </div> -->
-
-    <!-- Register -->
-    <!-- <div class="form-box register">
-        <h2>Registration</h2>
-        <form action="#">
-          <div class="input-box">
-            <span class="icon"><i class="fa-solid fa-user"></i></span>
-            <input type="text" required />
-            <label>Username</label>
-          </div>
-          <div class="input-box">
-            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-            <input type="email" required />
-            <label>Email</label>
-          </div>
-          <div class="input-box">
-            <span class="icon"><i class="fa-solid fa-lock"></i></span>
-            <input type="password" required />
-            <label>Password</label>
-          </div>
-          <div class="remember-forgot">
-            <label
-              ><input type="checkbox" />I agree to the terms &
-              conditions</label
-            >
-          </div>
-          <button type="submit" class="btnLGN">Register</button>
-          <div class="login-register">
-            <p>
-              Already have an account?
-              <a href="#" class="login-link">Login</a>
-            </p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div> -->
 
     <!-- START BANNER SLIDER -->
 
@@ -758,6 +736,9 @@
 
     <!-- Script Form Login dan Register -->
     <script src="scriptLOGINREGISTER.js"></script>
+    <script src="js\popper.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+
     <!-- Our Script -->
     <script>
       $(document).ready(function () {
