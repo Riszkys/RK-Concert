@@ -609,9 +609,9 @@ btn-KP:hover {
   right: 0;
   width: 45px;
   height: 45px;
-  background: #162938;
+  background: #fefffa;
   font-size: 2em;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -630,7 +630,7 @@ btn-KP:hover {
   position: relative;
   width: 100%;
   height: 50px;
-  border-bottom: 2px solid #162938;
+  border-bottom: 2px solid #737660;
   margin: 30px 0;
 }
 
