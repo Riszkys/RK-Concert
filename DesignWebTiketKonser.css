@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 header {
   background-color: #f8f9fa;
@@ -193,16 +193,14 @@ btn-KP:hover {
   background-color: #a9a9a9;
   padding-left: 6rem;
   padding-bottom: 1rem;
-  display: flex;
   width: auto;
 }
 .content-navbar-bottom {
-  padding-left: 50rem;
-  padding-right: 1rem;
   text-align: center;
 }
 .content-navbar-bottom .icon-navbar-bottom {
   padding-right: 1rem;
+  align-items: center;
 }
 .icon-navbar-bottom a {
   margin: 0.3rem;
@@ -466,7 +464,6 @@ btn-KP:hover {
 }
 
 /* dropdownmenu */
-
 .dropdown_menu {
   display: none;
   position: absolute;
@@ -501,6 +498,37 @@ btn-KP:hover {
 .dropdown_menu .nav-item {
   padding-top: 2rem;
 }
+/* navbar start */
+
+.navbar .toggle_btn {
+  color: white;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.action_btn {
+  background-color: #c4a360;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+  scale: 1.1;
+  color: white;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
 /* navbar start */
 
 .navbar .toggle_btn {
@@ -683,7 +711,7 @@ btn-KP:hover {
 .remember-forgot label input {
   accent-color: #162938;
   margin-right: 3px;
-} 
+}
 
 .remember-forgot a {
   color: #162938;
@@ -739,4 +767,5 @@ btn-KP:hover {
   .dropdown_menu {
     display: block;
   }
+  
 }
